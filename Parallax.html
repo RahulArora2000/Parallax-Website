@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        #wrapper{
+            height: 100vh ;
+            overflow-x: hidden;
+            overflow-y:auto;
+            perspective: 10px;
+        }
+
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            height: 100%;
+            z-index: -1;
+
+        }
+        .background{
+            
+            transform:translateZ(-40px);
+            scale:5;
+        }
+        .Foreground{
+            transform: translateZ(-20px) scale(3);
+        }
+
+        .background,.Foreground{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        
+        <div class="container">
+
+            <img src="background.png" class="background" alt="">
+            <img src="foreground.png" class="Foreground" alt="">
+            
+            <h1>ADVENTURE</h1>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
