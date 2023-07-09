@@ -1,4 +1,3 @@
-Certainly! Here's an example of a README.md file for a parallax website without any links:
 
 # Parallax Website
 
