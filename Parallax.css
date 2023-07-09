@@ -19,7 +19,7 @@
     transform-style: preserve-3d;
     height: 100%;
     z-index: -1;
-
+    
 }
 .background{
     
@@ -30,11 +30,22 @@
     transform: translateZ(-20px) scale(3);
 }
 
+h1{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX( -50%);
+    letter-spacing: 4px;
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0,0,10px rgba(0,0,0, 0.3);
+}
+
 .background,.Foreground{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
     object-fit: cover;
 
 }
